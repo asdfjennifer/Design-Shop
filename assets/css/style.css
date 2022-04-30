@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*================ GENERAL STYLES ==================
+
+Font: Karla
+Farbe: #323A45 / #848484
+
+font-family: 'Karla', sans-serif;
+*/
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+/*==================== HEADER ======================*/
+
+header {
+    display: flex;
+    margin: 10vh 10%;
+}
+
+header span {
+    font-weight: bold;
+}
+
+header nav {
+    display: inline;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: right;
+}
+
+nav ul {
+    display: inline;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: right;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: right;
+} 
+
+nav a:hover {
+    color: grey;
+} 
+
+/*===================== MAIN =======================*/
+
+.gridMain {
+margin: 10vh 10% 5vh;
+display: grid;
+grid-template-columns: repeat(3, 1fr); 
+grid-template-rows: repeat(3, 1fr);
+/* grid-template-areas:
+'mainA mainA mainA'
+'mainB mainC mainD'
+'mainE mainF mainG'
+; */
+gap: 1%;
+}
+
+.gridMain img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Kanken Art Laptop Backpack - large img */
+.mainA {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+/* Swing Arm Wood Desk Lamp */
+.mainB {
+    grid-area: 2 / 4 /  2 /  3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+/* Dieter Rams Buch - large img */
+.mainH {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+/* The Eye Buch */
+/* .mainI {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+} */
+
+/* Arigato Desk Lamp - large img */
+.mainO {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+/* Min: The New Simplicity - large img */
+.mainV {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 10;
+    grid-row-end: 11;
+}
+
+/* Bottle Grinder - large img */
+.main3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 13;
+    grid-row-end: 14;
+}
+
+/*==================== FOOTER ======================*/
+
+.gridFooter {
+    margin: 120vh 10% 5vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-areas:
+    'A B C D'
+    'E F G H'
+    'I'; */
+    /* gap: 10px; */
+}
+
+footer {
+    text-decoration: none;
+    line-height: 1.5em;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: grey;
+}
+
+.A {
+    font-weight: bold;
+}
+
+.B {
+    font-weight: bold;
+}
+
+.C {
+    font-weight: bold;
+}
+
+.D {
+    font-weight: bold;
+}
+
+/* Carefully curated */
+.E {
+    width: 55%;
+    font-size: 0.9em;
+}
+
+.E span {
+    font-weight: bold;
+}
+
+/* Email us */
+.F ul li { 
+    grid-area: F;
+    list-style: none;
+    font-size: 0.9em;
+}
+
+/* Click here to subscribe */
+.G {
+    font-size: 0.9em;
+}
+
+
+.G span {
+    font-style: italic;
+}
+
+.H ul li { 
+    grid-area: H; 
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+    font-size: 0.9em;
+}
+
+.I {
+    display: inline;
+    font-size: 0.9em;
+    color: grey;
+}
