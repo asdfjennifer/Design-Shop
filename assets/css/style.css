@@ -16,6 +16,7 @@ font-family: 'Karla', sans-serif;
 
 body {
     font-family: 'Karla', sans-serif;
+    flex-wrap: wrap;
 }
 
 /*==================== HEADER ======================*/
@@ -30,36 +31,28 @@ header span {
 }
 
 header nav {
-    display: inline;
-    justify-content: space-between;
-    align-items: flex-end;
-    text-align: right;
+    width: 100%;
+    display: flex;
 }
 
 nav ul {
-    display: inline;
-    justify-content: space-between;
-    align-items: flex-end;
-    text-align: right;
+    margin-left: auto;
+    /* align-items: flex-end;
+    justify-content: flex-end; */
 }
 
 nav ul li {
     display: inline;
-    justify-content: space-between;
-    align-items: flex-end;
-    text-align: right;
+    margin: 0 1vw;
 }
 
 nav a {
     color: #000;
     text-decoration: none;
-    justify-content: space-between;
-    align-items: flex-end;
-    text-align: right;
 } 
 
 nav a:hover {
-    color: grey;
+    text-decoration: underline;
 } 
 
 /*===================== MAIN =======================*/
@@ -90,9 +83,41 @@ gap: 1%;
     grid-row-end: 2;
 }
 
+main div div figcaption:nth-of-type(1) {
+    margin-top: 2vh;
+    display: flex;
+}
+
+div figcaption {
+    display: flex;
+    width: 100%;
+    /* justify-content: flex-end; */
+    /*align-items: flex-end;
+    text-align: right;
+    align-content: flex-end; */
+}
+
+main div div figcaption span {
+    color: red;
+    display: inline;
+    /* display: inline;*/
+    justify-content: flex-end;
+    /* display: flex;
+    flex-direction: row; */
+    /* display: inline;
+    justify-content: flex-end;
+    align-self: flex-end; */
+    /* text-align: right; */
+    margin-right: 10vw;
+}
+
+main div div figcaption:nth-of-type(2) {
+    color: grey;
+    margin-top: 1vh;
+}
+
 /* Swing Arm Wood Desk Lamp */
 .mainB {
-    grid-area: 2 / 4 /  2 /  3;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -168,19 +193,12 @@ footer a:hover {
     color: grey;
 }
 
-.A {
-    font-weight: bold;
-}
-
-.B {
-    font-weight: bold;
-}
-
-.C {
-    font-weight: bold;
-}
-
-.D {
+.A,
+.B,
+.C,
+.D,
+/* Ruby Bacanovic */
+.E span {
     font-weight: bold;
 }
 
@@ -188,10 +206,6 @@ footer a:hover {
 .E {
     width: 55%;
     font-size: 0.9em;
-}
-
-.E span {
-    font-weight: bold;
 }
 
 /* Email us */
@@ -206,11 +220,12 @@ footer a:hover {
     font-size: 0.9em;
 }
 
-
+/* Don't worry. We hate spam too. */
 .G span {
     font-style: italic;
 }
 
+/* SOCIAL */
 .H ul li { 
     grid-area: H; 
     color: #000;
@@ -219,6 +234,7 @@ footer a:hover {
     font-size: 0.9em;
 }
 
+/* COPYRIGHT */
 .I {
     display: inline;
     font-size: 0.9em;
