@@ -16,7 +16,6 @@ font-family: 'Karla', sans-serif;
 
 body {
     font-family: 'Karla', sans-serif;
-    flex-wrap: wrap;
 }
 
 /*==================== HEADER ======================*/
@@ -62,11 +61,6 @@ margin: 10vh 10% 5vh;
 display: grid;
 grid-template-columns: repeat(3, 1fr); 
 grid-template-rows: repeat(3, 1fr);
-/* grid-template-areas:
-'mainA mainA mainA'
-'mainB mainC mainD'
-'mainE mainF mainG'
-; */
 gap: 1%;
 }
 
@@ -81,6 +75,7 @@ gap: 1%;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+    width: 100%;
 }
 
 main div div figcaption:nth-of-type(1) {
@@ -90,25 +85,12 @@ main div div figcaption:nth-of-type(1) {
 
 div figcaption {
     display: flex;
-    width: 100%;
-    /* justify-content: flex-end; */
-    /*align-items: flex-end;
-    text-align: right;
-    align-content: flex-end; */
 }
 
 main div div figcaption span {
-    color: red;
     display: inline;
-    /* display: inline;*/
+    margin-left: auto;
     justify-content: flex-end;
-    /* display: flex;
-    flex-direction: row; */
-    /* display: inline;
-    justify-content: flex-end;
-    align-self: flex-end; */
-    /* text-align: right; */
-    margin-right: 10vw;
 }
 
 main div div figcaption:nth-of-type(2) {
@@ -167,15 +149,14 @@ main div div figcaption:nth-of-type(2) {
 /*==================== FOOTER ======================*/
 
 .gridFooter {
-    margin: 120vh 10% 5vh;
+    margin: 130vh 10% 5vh;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
-    /* grid-template-areas:
+    grid-template-areas:
     'A B C D'
     'E F G H'
-    'I'; */
-    /* gap: 10px; */
+    'I';
 }
 
 footer {
