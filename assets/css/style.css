@@ -54,27 +54,30 @@ nav a:hover {
 
 /*===================== MAIN =======================*/
 
+/* HOVER */
 .overlay {
     position: absolute;
+    top: center;
     bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 0%;
-    visibility: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    left: center;
+    right: center;
+    height: 78%;
+    width: 80%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-.gridMain > .overlay {
-    height: 100%;
-    visibility: visible;
-    background-color: rgba(0, 0, 0, 0.591);
-    transition: 0.25s all;
-    color: white;
-    text-align: center;
-    
+.overlay:hover {
+    opacity: 1;
 }
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+/*====================================*/
 
 .gridMain {
 margin: 10vh 10% 5vh;
@@ -84,6 +87,7 @@ grid-template-rows: repeat(3, 1fr);
 gap: 1%;
 }
 
+/* PRODUCT PICTURE */
 .gridMain img {
     width: 100%;
     object-fit: cover;
@@ -98,6 +102,7 @@ gap: 1%;
     width: 100%;
 }
 
+/* PRODUCT NAME */
 main div div figcaption:nth-of-type(1) {
     margin-top: 2vh;
     display: flex;
@@ -107,12 +112,14 @@ div figcaption {
     display: flex;
 }
 
+/* PRICE */
 main div div figcaption span {
     display: inline;
     margin-left: auto;
     justify-content: flex-end;
 }
 
+/* COMPANY */
 main div div figcaption:nth-of-type(2) {
     color: grey;
     margin-top: 1vh;
@@ -133,14 +140,6 @@ main div div figcaption:nth-of-type(2) {
     grid-row-start: 4;
     grid-row-end: 5;
 }
-
-/* The Eye Buch */
-/* .mainI {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
-} */
 
 /* Arigato Desk Lamp - large img */
 .mainO {
