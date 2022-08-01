@@ -1,5 +1,7 @@
 # Design-Shop
 
+new project HTML/CSS Vertiefung: Design Shop // 29-04-2022
+
 Hier haben wir das Projekt "Design Shop" im Rahmen des Supercode Bootcamps.
 
 Übungen zu:
