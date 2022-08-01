@@ -2,10 +2,9 @@
 
 Hier haben wir das Projekt "Design Shop" im Rahmen des Supercode Bootcamps.
 
-Dabei sollten wir Übungen zu 
+Übungen zu:
 - Grid 
-- Hovern auf Bildern 
-durchführen.
+- Hovern auf Bildern durchführen
 
 Angewandte Technologien hierbei sind:
 
@@ -14,4 +13,7 @@ Angewandte Technologien hierbei sind:
 
 Ergebnis: https://asdfjennifer.github.io/Design-Shop/
 
-xoxo Jenni 
+Note: Hovern bearbeiten
+
+
+![DesignShop](https://user-images.githubusercontent.com/98667941/182252923-6dd88e33-bdf7-494a-a840-3b538f430578.png)
