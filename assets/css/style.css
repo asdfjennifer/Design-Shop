@@ -18,6 +18,11 @@ body {
     font-family: 'Karla', sans-serif;
 }
 
+img:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
 /*==================== HEADER ======================*/
 
 header {
@@ -46,15 +51,16 @@ nav ul li {
 nav a {
     color: #000;
     text-decoration: none;
-} 
+}
 
 nav a:hover {
     text-decoration: underline;
-} 
+}
 
 /*===================== MAIN =======================*/
 
 /* HOVER */
+/*
 .overlay {
     position: absolute;
     top: center;
@@ -70,7 +76,7 @@ nav a:hover {
 
 .overlay:hover {
     opacity: 1;
-}
+}*/
 
 .text {
     position: absolute;
@@ -81,11 +87,11 @@ nav a:hover {
 /*====================================*/
 
 .gridMain {
-margin: 10vh 10% 5vh;
-display: grid;
-grid-template-columns: repeat(3, 1fr); 
-grid-template-rows: repeat(3, 1fr);
-gap: 1%;
+    margin: 10vh 10% 5vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1%;
 }
 
 /* PRODUCT PICTURE */
@@ -174,9 +180,9 @@ main div div figcaption:nth-of-type(2) {
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
-    'A B C D'
-    'E F G H'
-    'I';
+        'A B C D'
+        'E F G H'
+        'I';
 }
 
 footer {
@@ -210,7 +216,7 @@ footer a:hover {
 }
 
 /* Email us */
-.F ul li { 
+.F ul li {
     grid-area: F;
     list-style: none;
     font-size: 0.9em;
@@ -227,8 +233,8 @@ footer a:hover {
 }
 
 /* SOCIAL */
-.H ul li { 
-    grid-area: H; 
+.H ul li {
+    grid-area: H;
     color: #000;
     text-decoration: none;
     list-style: none;
