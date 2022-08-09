@@ -15,7 +15,9 @@ Angewandte Technologien hierbei sind:
 
 Ergebnis: https://asdfjennifer.github.io/Design-Shop/
 
-Note: Hovern bearbeiten
+
+
+![Kopie von giphy (1)](https://user-images.githubusercontent.com/98667941/183609583-06fa6df5-921e-4807-8800-8010501d3851.gif)
 
 
 ![DesignShop](https://user-images.githubusercontent.com/98667941/182252923-6dd88e33-bdf7-494a-a840-3b538f430578.png)
